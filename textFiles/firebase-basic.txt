@@ -1,0 +1,10 @@
+----------------------------- FIREBASE BASIC --------------
+
+1. firebase provide us a suite of tools to build Fullstack application.
+   i.Authentication
+   ii.Database
+   iii.File Storage
+   iv.Security
+   v.Analytics
+
+
