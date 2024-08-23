@@ -1,0 +1,14 @@
+--------------------- Firebase FireStorage ----------------
+
+1. Firebase FireStorage is used to store the multimedia files in the firebase.
+
+2. import {ref ,uploadBytesresumable} from the 'firebas/storage 
+
+3. ref(storage ,folder/file-name) --> creates an reference for te storage
+
+4. uploadBytesresumable(ref , file) --> creates an upload task. 
+      1. 'state_changed' observer, called any time the state changes
+      2. Error observer, called on failure
+      3. Completion observer, called on successful completion
+
+5. getDownloadUrl() --> provide us the url for the file we uploaded

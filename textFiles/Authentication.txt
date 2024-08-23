@@ -1,3 +1,7 @@
 ---------------------------- FIREBASE AUTHENTICATION ----------
 
-1.
+1. Firebase provide us lots authendication method.
+
+2. configure in the firebase console and use docs to use it.
+
+3. each authendication is unique configurations we need to setup it .

@@ -1,0 +1,30 @@
+------------------------ FIREBASE FIRESTORE ------------------
+
+1. firebase firestore is an databse for the firebase applications.
+
+2. setup the firestore database in firebase console. then import getfirebase function
+and export the firestore = getfirebase(app)' import from firebase/fireStore
+
+3. const collectionRef = collection(fireStore , 'collection name') to create a collection
+
+4. addDoc(collectionRef , data) --> add the data in the collection
+
+5. getDocs(collectionRef) --> to get the collection all data in the firestore.
+
+6. doc(databse , collection name , docID) --> is used to get the update doc from firestore.
+
+7. updateDoc(doc ,updateData) to update the doc
+
+8. deleteDoc(doc) --> deletes the doc
+
+9. onSnapShot(collectionref , (data)=>{}) --> it runs on every time if made changes
+  in the firestore and return that data too.
+
+
+------------------------------- FIREBASE FIREBASE QUERIES ------------
+
+1. we can get data as queries from firestore.
+
+2. import query , where 
+
+3.query(collectionRef , where('field' , 'condition' , 'value));
