@@ -1,0 +1,13 @@
+----------------------- FIREBASE HOSTING -------------------
+
+1. It provide an our app to host.
+
+2. install firebase-tools npm i -g firebase-tools
+
+3. run firebase login to login to the firebase 
+
+4. run firebase init hosting
+
+5. firebase emulators:start --project projectId to preview localhost
+
+6. firebase deploy

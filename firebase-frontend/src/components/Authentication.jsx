@@ -1,15 +1,22 @@
-import React, { useState } from "react";
-import { app } from "../../firebase.config";
+import React, { useEffect, useState } from "react";
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
 } from "firebase/auth";
 
 const Authentication = () => {
   const firebaseAuth = getAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(()=>{
+    onAuthStateChanged(firebaseAuth ,(data)=>{
+      console.log(data)
+    })
+  } ,[])
 
   const signUp = () => {
     if (validateCredential(username, password)) {
@@ -38,7 +45,11 @@ const Authentication = () => {
       return false;
     }
   };
-
+  
+  const logOut = () => {
+    signOut(firebaseAuth);
+    alert('user logged out!')
+  }
   return (
     <>
       <h1> Firebase Authentication</h1>
@@ -57,6 +68,7 @@ const Authentication = () => {
         <br /> <br />
         <button onClick={signUp}>SignUp</button> 
         <button onClick={login}>Login</button> 
+        <button onClick={logOut}>Logout</button>
       </div>
     </>
   );
