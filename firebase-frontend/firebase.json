@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site":"devsk-firebase",
     "public": "dist",
     "ignore": [
       "firebase.json",
